@@ -1,0 +1,32 @@
+/* Global styles (applies to all screen sizes) */
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Desktop styles (applies to screens wider than 768px, adjust as needed) */
+@media (min-width: 769px) {
+  .main {
+    margin-left: 16rem;
+  }
+
+  .background {
+    z-index: -1;
+    display: block;
+    margin-top: -120vh;
+    position: fixed;
+    opacity: 20%;
+  }
+}
+
+/* Mobile styles (applies to screens 768px and below) */
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+
+  .background {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+/* Desktop Styles */
+
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vw;
+}
+
+.happy-word {
+    color: rgb(84, 84, 255);
+}
+
+.sad-word {
+    color: rgb(255, 62, 62);
+}
+
+.playlists {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin: 7vw;
+}
+
+.musicHeader {
+    color: grey;
+    font-size: 2vw;
+}
+
+.musicIframeContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.02vw;
+    margin-top: -2vw;
+}
+
+.musicIframe {
+    border-radius: 25px;
+    width: 20vw;
+    height: 30vw;
+}
+
+/* Media Query for Mobile View */
+
+@media screen and (max-width: 768px) {
+    #music {
+        min-height: auto; /* Let the content dictate the height on mobile */
+    }
+
+    .playlists {
+        flex-direction: column; /* Stack the playlists vertically on mobile */
+        gap: 1rem; /* Adjust the gap between playlists on mobile */
+        margin: 2rem; /* Adjust margin for spacing on mobile */
+    }
+
+    .musicHeader {
+        font-size: 1.5rem; /* Decrease font size for better readability on mobile */
+    }
+
+    .musicIframeContainer {
+        flex-direction: column; /* Stack the iframes vertically on mobile */
+        gap: 1rem; /* Adjust the gap between iframes on mobile */
+        margin-top: -1rem; /* Adjust margin for spacing on mobile */
+    }
+
+    .musicIframe {
+        width: 80vw; /* Adjust iframe width for mobile */
+        height: 40vw; /* Adjust iframe height for mobile */
+    }
+}

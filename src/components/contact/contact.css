@@ -1,0 +1,94 @@
+.contact-page{
+    height:55vw;
+    width: 100;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.head{
+    font-size: 3vw;
+    font-weight: 200;
+    letter-spacing: .9vw;
+    background-color: black;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1vw;
+}
+
+.contact-card{
+    /* margin: 10rem 0; */
+    position: relative;
+    top: 30%;
+    margin: 0 10vw;
+    /* left: 10vw;
+    right: 10vw; */
+    bottom: 50%;
+    padding: 2vw 0;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.44);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+
+.contact-card:hover{    
+    background-color: rgba(211, 211, 211, 0.4);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /* box-sizing: border-box; */
+}
+
+.links{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;   
+}
+
+/* .container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+} */
+
+.connect{
+    height: 6vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.connect:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    scale: 1.1;
+    transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page {
+        height: auto;
+        padding: 2rem; /* Add padding for spacing on mobile devices */
+    }
+    
+    .head {
+        font-size: 2rem; /* Decrease font size for better readability on mobile */
+        letter-spacing: 0.5vw; /* Adjust letter spacing for mobile */
+        margin-bottom: 1rem; /* Adjust margin for spacing on mobile */
+    }
+    
+    .contact-card {
+        top: 10%; /* Adjust the positioning for the contact card on mobile */
+        margin: 2vw 8vw; /* Adjust margin for spacing on mobile */
+        padding: 3vw 0; /* Adjust padding for spacing on mobile */
+    }
+    
+    .links {
+        flex-direction: column; /* Stack the links vertically on mobile */
+        gap: 2rem; /* Adjust the gap between links on mobile */
+    }
+    
+    .connect {
+        height: 4rem; /* Decrease the height of the connect icons on mobile */
+    }
+}

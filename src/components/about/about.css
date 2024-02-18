@@ -1,0 +1,75 @@
+/* Desktop Styles */
+
+.aboutMain {
+    padding: 1vw 0;
+    height: 60vw;
+    /* margin: 20vh 3vw; */
+}
+
+.aboutContainer {
+    margin: 8vw 5vw;
+    color: black;
+}
+
+.aboutHead {
+    border-radius: 1rem;
+    background-color: rgb(177, 177, 177, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    letter-spacing: 1vw;
+    padding: 1vw 0;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.aboutBody {
+    font-size: 1.1vw;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(202, 202, 202, 0.5);
+    padding: 1vw;
+    text-align: left;
+    letter-spacing: 0.11vw;
+    line-height: 2.2vw;
+    cursor: pointer;
+}
+
+.aboutHead:hover {
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.3s;
+}
+
+.aboutBody:hover {
+    transition: 0.3s;
+    scale: 1.01;
+}
+
+/* Media Query for Mobile View */
+
+@media screen and (max-width: 768px) {
+
+
+    .aboutMain {
+        padding: 1vw 0; /* Adjust padding for mobile view */
+        height: auto; /* Let the content dictate the height */
+        margin: 2vw 2vw; /* Adjust margin for spacing on mobile */
+    }
+
+    .aboutContainer {
+        margin: 2vw 2vw; /* Adjust margin for spacing on mobile */
+    }
+
+    .aboutHead {
+        font-size:6vw; /* Decrease font size for better readability on mobile */
+        letter-spacing: 0.5rem; /* Adjust letter spacing for mobile */
+        padding: 1vw 0; /* Adjust padding for spacing on mobile */
+    }
+
+    .aboutBody {
+        font-size: 2.5vw; /* Decrease font size for better readability on mobile */
+        letter-spacing: 0.1rem; /* Adjust letter spacing for mobile */
+        line-height: 4vw; /* Adjust line height for mobile */
+    }
+}
